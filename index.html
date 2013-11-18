@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>図鑑</title>
+<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.0-rc.1.min.css">
+<style type="text/css">
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.0-rc.1.min.js"></script>
+<script>
+	$(document).on("pageinit", "#page", function(e, data) {
+		
+	});
+	
+	// アプリの終了
+	$(document).on("pageinit", "#dialog_exit_app", function(e, data) {
+		$(document).on("click", "#btn_exit_app", function() {
+			navigator.app.exitApp();
+		});
+	});
+</script>
+</head>
+<body>
+<div data-role="page" id="page" data-content-theme="b">
+	<div data-role="header" data-position="fixed" data-content-theme="b">
+		<h4>図鑑アプリ</h4>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview">
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/1_tmb.jpg' />動物</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/2_tmb.jpg' />植物</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/3_tmb.jpg' />昆虫</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/4_tmb.jpg' />自動車</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/5_tmb.jpg' />魚</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/6_tmb.jpg' />飛行機</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/7_tmb.jpg' />恐竜</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/8_tmb.jpg' />宇宙</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/9_tmb.jpg' />国旗</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/10_tmb.jpg' />城</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/11_tmb.jpg' />世界遺産</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/12_tmb.jpg' />ペット</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/14_tmb.jpg' />世界一</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/15_tmb.jpg' />古生代生物</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/16_tmb.jpg' />百人一首</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/17_tmb.jpg' />天気図(てんきず)</a></li>
+			<li><a href='list.html' data-ajax='false'>
+				<img src='http://cosmointelligence.web.fc2.com/images/0/18_tmb.jpg' />古生代生物</a></li>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li id="exit"><a href="exit_app_dialog.html" data-rel="dialog" data-transition="none">おわり</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
